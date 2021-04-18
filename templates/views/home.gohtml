@@ -1,0 +1,11 @@
+{{define "body"}}
+    <div class="card border-danger mb-3 rounded col-6">
+        <div class="card-header text-center">Authorized</div>
+        <div class="card-body">
+           You have been successfully authorized with username {{ .Username}}
+            <form action="./logout" mathod="post" style="text-align: center;">
+                <button class="w-50 btn btn-danger" type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+{{end}}
